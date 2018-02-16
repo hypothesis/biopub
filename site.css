@@ -11,6 +11,7 @@
 }
 
 html {
+  /* Ensure footer is at bottom of screen if page content is short. */
   min-height: 100%;
 }
 
@@ -20,6 +21,11 @@ body {
   color: var(--grey-1);
 
   margin: 0;
+
+  /* Enable footer to be positioned at bottom of page. */
+  position: relative;
+  /* Make space for the absolutely-positioned footer. */
+  padding-bottom: 95px;
 }
 
 .header {
