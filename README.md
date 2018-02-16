@@ -30,3 +30,12 @@ us](https://web.hypothes.is/contact/). Please note that although you can
 customize the default group that visitors to your site will see, logged-in
 Hypothesis users will still be able to create their own private groups and share
 them with others.
+
+## Building this site
+
+```
+make build
+python -m SimpleHTTPServer 9000 docs/
+```
+
+Then browse to http://localhost:9000/
