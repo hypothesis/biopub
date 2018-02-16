@@ -1,34 +1,49 @@
-<h1>BioPub</h1>
+<html>
+  <head>
+    <title>BioPub</title>
+    <link rel="stylesheet" href="site.css">
+    <script async defer src="https://hypothes.is/embed.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img class="logo__img" src="icons/logo.svg">
+        <span class="logo__bio">Bio</span>
+        <span class="logo__pub">PUB</span>
+      </div>
+      <div class="header__divider"></div>
+      <a href="#" class="header-link">Home</a>
+      <a href="#" class="header-link">News</a>
+      <a href="#" class="header-link">Journals</a>
+      <a href="#" class="header-link">Topics</a>
+      <a href="#" class="header-link">Careers</a>
+    </header>
 
-<p><strong>BioPub</strong> is a website created for demonstration purposes showing how a
-publisher can embed Hypothesis on parts of their website and customize various
-aspects of its behavior. This includes:</p>
+    <main class="article">
+      <h1 class="article-title">The title of the article</h1>
+      <button class="cta-button" data-hypothesis-trigger>
+        View annotations <span class="cta-button__count" data-hypothesis-annotation-count></span>
+      </button>
 
-<ul>
-<li><strong>Customizing the default annotation layer.</strong> By default the Hypothesis client
-shows annotations from the
-"<a href="https://hypothes.is/groups/__world__/public">Public</a>" layer (or "group")
-which is moderated by Hypothesis staff. Publishers can change this to a layer
-that belongs to them and which they can moderate according to their own
-policies. These layers can be open to contributions from all Hypothesis users,
-or restricted to a specifically invited set of users.</li>
-<li><strong>Changing the look and feel of the client.</strong> Publishers can customize various
-aspects of the look and feel of the annotation tool in order to better fit
-the existing look of their website and reflect their brand.</li>
-<li><strong>Interacting with the annotation client.</strong></li>
-</ul>
+      <p>The text of the article.</p>
+    </main>
 
-<h2>Customizing Hypothesis on your own site</h2>
-
-<p>For more details on how to customize Hypothesis on your own site, see the
-<a href="http://h-client.readthedocs.io/en/latest/publishers/">documentation for the Hypothesis
-client</a>.</p>
-
-<h2>Custom annotation groups</h2>
-
-<p>If you are interested in creating custom annotation groups to replace the
-default "Public" group on your site, please <a href="https://web.hypothes.is/contact/">contact
-us</a>. Please note that although you can
-customize the default group that visitors to your site will see, logged-in
-Hypothesis users will still be able to create their own private groups and share
-them with others.</p>
+    <!--
+      The footer and header currently look the same for the most part, so we just re-use the
+      styles.
+    !-->
+    <footer class="header footer">
+      <div class="logo">
+        <img class="logo__img" src="icons/logo.svg">
+        <span class="logo__bio">Bio</span>
+        <span class="logo__pub">PUB</span>
+      </div>
+      <div class="header__divider"></div>
+      <a href="#" class="header-link">Home</a>
+      <a href="#" class="header-link">News</a>
+      <a href="#" class="header-link">Journals</a>
+      <a href="#" class="header-link">Topics</a>
+      <a href="#" class="header-link">Careers</a>
+    </footer>
+  </body>
+</html>
