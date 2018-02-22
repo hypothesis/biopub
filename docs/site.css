@@ -68,6 +68,24 @@ body {
   color: var(--grey-6);
 }
 
+.search-field__icon {
+  height: 22px;
+
+  /* Align bottom of icon with search field input bottom border. */
+  position: relative;
+  top: 6px;
+  left: -2px;
+}
+
+.search-field__input {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  color: white;
+  border-bottom: 1px solid white;
+  font-size: var(--font-normal);
+  max-width: 130px;
+}
+
 .footer {
   background-color: black;
   color: var(--grey-3);
