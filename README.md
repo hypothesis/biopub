@@ -39,3 +39,10 @@ python -m SimpleHTTPServer 9000 docs/
 ```
 
 Then browse to http://localhost:9000/
+
+## Deploying changes to this site
+
+1. Edit the content and commit changes
+2. Run `make build` and commit the updated `docs/` directory, including any new
+   files.
+3. Push to master and check out changes on https://biopub.hypothes.is
