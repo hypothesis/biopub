@@ -1,3 +1,7 @@
-.PHONY: build
-build:
-	cp -R *.html *.css icons docs/
+.PHONY: dev
+dev: python
+	@tox -q
+
+.PHONY: python
+python:
+	@./bin/install-python

@@ -31,18 +31,33 @@ customize the default group that visitors to your site will see, logged-in
 Hypothesis users will still be able to create their own private groups and share
 them with others.
 
-## Building this site
+## Installing BioPub in a development environment
 
-```
-make build
-python -m SimpleHTTPServer 9000 docs/
-```
+### You will need
 
-Then browse to http://localhost:9000/
+* [Git](https://git-scm.com/)
 
-## Deploying changes to this site
+* [pyenv](https://github.com/pyenv/pyenv)
+  Follow the instructions in the pyenv README to install it.
+  The Homebrew method works best on macOS.
 
-1. Edit the content and commit changes
-2. Run `make build` and commit the updated `docs/` directory, including any new
-   files.
-3. Push to master and check out changes on https://biopub.hypothes.is
+### Clone the Git repo
+
+    git clone https://github.com/hypothesis/biopub.git
+
+This will download the code into an `biopub` directory in your current working
+directory. You need to be in the `biopub` directory from the remainder of the
+installation process:
+
+    cd biopub
+
+### Start the development server
+
+    make dev
+
+The first time you run `make dev` it might take a while to start because it'll
+need to install the application dependencies and build the assets.
+
+This will start the server on port 9000 (http://localhost:9000).
+
+**That's it!** You’ve finished setting up your BioPub development environment.
